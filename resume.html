@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Alex Patenaude</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/resume.css">
+</head>
+
+<body>
+    <header class="nav-header">
+        <nav>
+            <div class="nav-left">
+                <span>Alex Patenaude</span>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                    <li><a href="resume.html" class="active">Resume</a></li>
+                </ul>
+                <button class="hamburger-menu" aria-label="Toggle menu">&#9776;</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section text-center">
+        <h1 class="section-title">Resume</h1>
+        <p class="section-subtitle">Showcasing my academic background, certifications, and professional experience.</p>
+    </section>
+
+    <main class="resume-section container">
+        <section>
+            <h2 class="section-title">Education</h2>
+            <div class="resume-item">
+                <h3>Bachelor of Computer Information Systems (BCIS)</h3>
+                <p><strong>Mount Royal University</strong> - September 2023 to Present</p>
+                <ul>
+                    <li>COMP 2511: Web Development and UX/UI Principles</li>
+                    <li>COMP 1502: Introduction to Programming</li>
+                    <li>COMP 1701: Computer Organization and Architecture</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Certifications</h2>
+            <div class="resume-item">
+                <ul>
+                    <li>Food Safety Certificate AB Health Services, 2021</li>
+                    <li>CPR C and AED, 2020</li>
+                    <li>Alberta First Aid and CPR certification, 2020</li>
+                    <li>Alberta Class 5 Driver’s License, 2023</li>
+                    <li>Bronze Medallion, Lifesaving Society, 2020</li>
+                    <li>Red Cross Childcare and First Aid, 2019</li>
+                    <li>ProServe, 2024</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Work Experience</h2>
+            <div class="resume-item">
+                <h3>Customer Service / Cook</h3>
+                <p><strong>Dragon’s Lair Burger Co.</strong> - July 2021 to November 2022</p>
+                <p>Provided exceptional customer service, managed sales transactions, and prepared food in a fast-paced environment.</p>
+            </div>
+            <div class="resume-item">
+                <h3>Sales Associate</h3>
+                <p><strong>Downhill Karting</strong> - June 2023 to October 2023</p>
+                <p>Assisted with daily operations, ensured excellent guest experiences, and handled sales transactions.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="resume-item">
+                <ul>
+                    <li>Programming: HTML, CSS, JavaScript</li>
+                    <li>Web Development: Responsive Design, Bootstrap</li>
+                    <li>IT Support: Hardware troubleshooting, Cybersecurity</li>
+                    <li>Creative Tools: 3D Printing and Firmware Optimization</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="small-footer">
+        <p>&copy; 2024 Alex Patenaude. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger-menu');
+
+            hamburger.addEventListener('click', () => {
+                menu.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+
+</html>

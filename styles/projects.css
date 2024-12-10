@@ -26,7 +26,7 @@
 .carousel-inner {
     display: flex;
     align-items: center;
-    height: 80vh; 
+    height: auto; 
 }
 
 .project-card {
@@ -59,4 +59,11 @@ footer {
     color: white;
     padding: 15px 20px;
     text-align: center;
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        background-color: #663ac5b4;
+        color: white;
+    }
 }

@@ -5,6 +5,7 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+    height: auto;
 }
 
 .contact-section h2 {

@@ -137,14 +137,14 @@ a {
 }
 
 .section {
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 0 20px;
+    padding: 5vh 5vh;
 }
 
 .section h2 {

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works - Alex Patenaude</title>
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/projects.css">
+</head>
+
+<body>
+    <header class="nav-header">
+        <nav>
+            <div class="nav-left">
+                <span>Alex Patenaude</span>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                </ul>
+                <button class="hamburger-menu" aria-label="Toggle menu">&#9776;</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="projects-section">
+        <h1 class="text-center section-title">My Previous Work</h1>
+        <p class="text-center section-subtitle">Showcasing some of my favorite projects that highlight creativity and functionality.</p>
+
+        <div id="projectsCarousel" class="carousel slide mx-auto" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card project-card mx-auto">
+                        <img src="images/Gaming PC Store.png" class="card-img-top" alt="Gaming Pc Store">
+                        <div class="card-body">
+                            <h5 class="card-title">Gaming PC Store</h5>
+                            <p class="card-text">As a web developer, creating this site was an opportunity to refine my skills in responsive design, clean layouts, and user-focused functionality. Me and my Partner prioritized intuitive navigation and ensured a seamless experience across devices. This project reinforced the importance of balancing aesthetics with usability and taught me how small design details, like spacing and alignment, significantly impact user engagement. Moving forward, I aim to enhance accessibility and scalability to ensure the site grows effectively with its audience.</p>
+                            <a href="https://elegant-peony-5bbf4e.netlify.app/" class="btn btn-primary">View Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card project-card mx-auto">
+                        <img src="images/LA website.png" class="card-img-top" alt="Discover Los Angeles">
+                        <div class="card-body">
+                            <h5 class="card-title">Los Angeles City Website</h5>
+                            <p class="card-text">Creating the "Discover Los Angeles" website as a Lab was a great opportunity to practice combining clean design with engaging visuals. The image carousel sets the tone, while the oval images below create a sense of cohesion and balance. This project reinforced the importance of simple, intuitive layouts that highlight content effectively. It also helped me refine my skills in aligning elements and structuring pages to deliver a seamless user experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card project-card mx-auto">
+                        <img src="images/math and comp site.png" class="card-img-top" alt="Department of Mathematics and Computing">
+                        <div class="card-body">
+                            <h5 class="card-title">Department of Mathematics and Computing Website</h5>
+                            <p class="card-text">Developing the "Department of Mathematics and Computing" website was a valuable experience in creating a professional and informative platform. The design emphasizes simplicity and clarity, using clean layouts and intuitive navigation to ensure users can easily access program details. The use of side navigation buttons and well-defined content sections ensures a logical flow, while the consistent color scheme reinforces the department's branding. This project taught me the importance of aligning content structure with user needs and maintaining a professional aesthetic for academic contexts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card project-card mx-auto">
+                        <img src="images/eportfolio 1.png" class="card-img-top" alt="Project 4">
+                        <div class="card-body">
+                            <h5 class="card-title">ePortfolio</h5>
+                            <p class="card-text">This ePortfolio demonstrates skills learned in COMP 2511, including responsive design, accessibility, and user-focused development. Key features, like the contact form and projects page, balance functionality and aesthetics, reflecting growth in design and problem-solving.</p>
+                            <a href="eportfolio.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alex Patenaude. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger-menu');
+
+            hamburger.addEventListener('click', () => {
+                menu.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+
+</html>

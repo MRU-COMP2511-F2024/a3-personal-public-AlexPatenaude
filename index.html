@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Patenaude's ePortfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <section class="full-section hero-section">
+        <header class="nav-header">
+            <nav>
+                <div class="nav-left">
+                    <span>Alex Patenaude</span>
+                </div>
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="interests.html" class="active">Interests</a></li>
+                    </ul>
+                    <button class="hamburger-menu" aria-label="Toggle menu">
+                        &#9776;
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <div class="hero-text">
+            <h1 class="fadeInUp">Welcome to My ePortfolio</h1>
+            <p class="fadeInUp">Hi, I'm Alex Patenaude, a passionate web developer. Explore my work, skills, and projects below.</p>
+        </div>
+    </section>
+    
+
+    <section class="full-section section">
+        <h2>About Me</h2>
+        <p>I'm a web developer with a focus on creative and functional design. My journey in coding started when I was very young, and since then, I’ve been constantly improving my skills in building modern, user-friendly websites, among other things.</p>
+        <audio controls class="mt-3" aria-label="Alex Patenaude's Introduction Audio">
+            <source src="audio/introduction.mp3" type="audio/mpeg">
+            Your browser does not support the audio element. Please use a modern browser to listen to the audio.
+        </audio>        
+        <section class="transcript-section">
+            <h3>Transcript</h3>
+            <p>
+                "Hello, my name is Alex Patenaude, and welcome to my ePortfolio. I'm a student at Mount Royal University, currently pursuing a Bachelor’s degree in Computer Information Systems. Through my coursework in COMP 2511, I’ve expanded my knowledege of HTML, CSS, JavaScript, and Bootstrap, which I applied throughout this ePortfolio to create responsive, user-friendly layouts.
+            </p>
+            <p>
+                Outside of web development, I enjoy 3D printing, Cars, and golfing - hobbies that have taught me creativity, problem-solving, and precision. These skills are mirrored in my approach to web design, where attention to detail and iterative improvement are essential.
+            </p>
+            <p>
+                Thank you for taking the time to explore my work. I hope this ePortfolio provides insight into my capabilites and the thoughtful approach I bring to every project. If you’d like to connect or discuss potential collaborations, feel free to reach out through the contact page or using my contact information."
+            </p>
+        </section>
+    </section>
+
+    <section class="full-section parallax">
+        <h2>My Work</h2>
+        <p>Check out the projects I've built and the skills I've developed over the years. Each project is a testament to my growth as a web developer.</p>
+        <a href="projects.html" class="admire-button">See My Work</a>
+    </section>
+
+    <section class="full-section contact-section" id="contact">
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> apate034@mtroyal.ca</p>
+            <p><strong>Phone:</strong> +1 (403) 999-8574</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alex-patenaude-929a32205/">https://www.linkedin.com/in/alex-patenaude-929a32205/</a></p>
+        </div>
+        <a href="files/contact-info.txt" class="download-button" download>
+            Download Contact Information
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alex Patenaude. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"></script>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menu = document.querySelector('.nav-menu');
+        const hamburger = document.querySelector('.hamburger-menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
+    });
+</script>
+
+</html>

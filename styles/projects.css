@@ -61,9 +61,33 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 480px) {
-    .project-card {
-        background-color: #663ac5b4;
-        color: white;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%; 
+    border: 2px solid white; 
+    width: 40px;
+    height: 40px;
+    background-size: 50%;
+}
+
+@media (max-width: 768px) {
+    .carousel-control-prev {
+        left: -50px;
+    }
+
+    .carousel-control-next {
+        right: -50px;
     }
 }
+
+@media (max-width: 480px) {
+    .carousel-control-prev {
+        left: -30px; 
+    }
+
+    .carousel-control-next {
+        right: -30px;
+    }
+}
+
